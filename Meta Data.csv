@@ -1,0 +1,34 @@
+,,
+DATA FIELD,UNITS,MEANING
+Airline,Factor,Factor variable denoting the name of the Airline
+,,There are 6 airlines in the data:
+,,British Airways
+,,Delta Airlines
+,,Air France
+,,Singapore Airlines
+,,Virgin Airlines
+,,Jet Airways
+Aircraft,Factor,Manufacturer of the Airplane / Aircraft e.g. 
+,,Boeing 
+,,Airbus 
+TravelMonth,Factor,Factor variable denoting the month Travel
+,,Jul
+,,Aug
+,,Sep 
+,,Oct
+FlightDuration,Hours,Flight Duration
+IsInternational,Factor,International or Domestic Flight w.r.t. Airlines' Home Country
+SeatsEconomy,Number,Number of Economy Seats in the Aircraft
+SeatsPremium,Number,Number of Premium Economy Seats in the Aircraft
+PitchEconomy,Number (Inches),Distance between two consecutive Economy Seats
+PitchPremium,Number (Inches),Distance between two consecutive Premium Economy Seats
+WidthEconomy,Number (Inches),Width between armrests of an Economy Seat
+WidthPremium,Number (Inches),Width between armrests of a Premium Economy Seat
+PriceEconomy,Number (USD),Price of Economy Seat
+PricePremium,Number (USD),Price of Premium Economy Seat
+,,
+PriceRelative,(PricePremium - PriceEconomy) / PriceEconomy,
+SeatsTotal,SeatsEconomy + SeatsPremium,
+PercentPremiumSeats,(SeatsPremium / SeatsTotal) * 100,
+PitchDifference,PitchPremium - PitchEconomy,
+WidthDifference,WidthPremium - WidthEconomy,
